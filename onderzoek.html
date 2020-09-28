@@ -1,0 +1,105 @@
+<!doctype html>
+
+<head>
+    <title> Pizza onderzoek</title>
+</head>
+
+<body>
+    <style>
+        h1 {
+            color: rgb(255, 123, 0);
+            font-family: cursive;
+            border: cornflowerblue;
+            border-radius: 10px;
+            border: 5px solid black;
+            width: 350px;
+        }
+
+        h4 {
+            border: 5px solid black;
+            color: grey;
+            border-radius: 10px;
+            width: 300px;
+            font-family: 'Courier New';
+        }
+
+        label.one {
+            color: yellow;
+            font-size: 30px;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+
+
+        label.two {
+            color: black;
+            font-family: 'Gill Sans';
+        }
+
+        label.three {
+            color: blueviolet;
+            font-family: Impact;
+        }
+
+        p {
+            color: rgb(255, 80, 103);
+        }
+
+        body {
+            font-size: 20px;
+            font-family: Tahoma;
+            background-color: rgb(130, 238, 238);
+            color: red;
+        }
+    </style>
+    <header>
+        <h1>Onderzoek</h1>
+    </header>
+    <main>
+        <p>Voor een marktonderzoek willen we graag een paar dingen weten: </p>
+
+        <label class="one"> Je geboortedatum?</label>
+        <input type="date">
+        <br><br>
+
+        <label class="two">Jongen of Meisje?</label>
+        <input type="radio" name="bg">Jongen
+        <input type="radio" name="bg">Meisje
+        <br><br><br>
+
+        <label> Wat is je lievelingskleur? Klik op de tabel</label>
+        <input type="color">
+        <br><br><br>
+
+        <label class="three">Wat is je lievelingseten?</label>
+        <select>
+            <option>Kies uit:</option>
+            <option>Pizza</option>
+            <option>Salade</option>
+            <option>Chips</option>
+            <option>Appel</option>
+        </select>
+
+        <p>Pizza met:</p>
+        <input type="checkbox">Ham
+        <input type="checkbox">Paprika
+        <input type="checkbox">Champignon
+    </main>
+
+    <h4> Laat je gegevens achter</h4>
+
+    <form <label for="fname">Voornaam:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Achternaam:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <form method="post" action="mailto:robertjangras@outlook.com">
+            <em>Opmerkingen:</em><br>
+            <textarea rows="7" cols="25" name="opmerkingen"></textarea>
+            <input type="submit" value="Verzenden">
+        </form>
+
+        <p>Als je klikt op verzenden dan zullen je opmerkingen verstuurd worden</p>
+</body>
+
+</html>
